@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="460.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.signupController">
+   <children>
+      <AnchorPane layoutX="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="670.0">
+         <children>
+            <Pane layoutX="-11.0" prefHeight="460.0" prefWidth="458.0" style="-fx-background-color: BISQUE;">
+               <children>
+                  <Label layoutX="154.0" layoutY="-2.0" prefHeight="45.0" prefWidth="142.0" text="Sign up">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="firstnameTextField" alignment="TOP_CENTER" layoutX="68.0" layoutY="77.0" prefHeight="28.0" prefWidth="306.0" promptText="Firstname" style="-fx-border-color: CORNFLOWERBLUE; -fx-background-color: GAINSBORO;" />
+                  <TextField fx:id="lastnameTextField" alignment="TOP_CENTER" layoutX="88.0" layoutY="131.0" prefHeight="28.0" prefWidth="306.0" promptText="Lastname" style="-fx-border-color: CORNFLOWERBLUE; -fx-background-color: GAINSBORO;" />
+                  <TextField fx:id="usernameTextField" alignment="TOP_CENTER" layoutX="104.0" layoutY="189.0" prefHeight="28.0" prefWidth="306.0" promptText="Username" style="-fx-border-color: CORNFLOWERBLUE; -fx-background-color: GAINSBORO;" />
+                  <TextField fx:id="filiereTextField" alignment="TOP_CENTER" layoutX="115.0" layoutY="243.0" prefHeight="28.0" prefWidth="306.0" promptText="filiere" style="-fx-border-color: CORNFLOWERBLUE; -fx-background-color: GAINSBORO;" />
+                  <PasswordField fx:id="passwordField" alignment="TOP_CENTER" layoutX="126.0" layoutY="297.0" prefHeight="28.0" prefWidth="306.0" promptText="Password" style="-fx-border-color: CORNFLOWERBLUE; -fx-background-color: GAINSBORO;" />
+                  <Label alignment="TOP_CENTER" layoutX="54.0" layoutY="53.0" prefHeight="25.0" prefWidth="95.0" text="First name">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="67.0" layoutY="108.0" prefHeight="25.0" prefWidth="113.0" text="Last name ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="123.0" layoutY="274.0" prefHeight="25.0" prefWidth="95.0" text="Password">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="112.0" layoutY="221.0" prefHeight="25.0" prefWidth="113.0" text="filiere">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="94.0" layoutY="166.0" prefHeight="25.0" prefWidth="87.0" text="Username">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="135.0" layoutY="331.0" prefHeight="25.0" prefWidth="130.0" text="role">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="messageLabel" layoutX="159.0" layoutY="408.0" prefHeight="32.0" prefWidth="276.0" textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="roleChoiceBox" layoutX="143.0" layoutY="356.0" prefHeight="25.0" prefWidth="306.0" />
+               </children>
+            </Pane>
+            <Label layoutX="501.0" layoutY="19.0" prefHeight="17.0" prefWidth="79.0" text="FlexManager">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="73.0" layoutX="592.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/kindpng_2271076.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="signupButton" layoutX="469.0" layoutY="354.0" mnemonicParsing="false" onAction="#signUp" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: black;" text="Sign up" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <ProgressBar fx:id="progressBar" layoutX="459.0" layoutY="328.0" opacity="0.52" prefHeight="18.0" prefWidth="195.0" progress="0.0" AnchorPane.bottomAnchor="114.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ProgressBar>
+            <Button fx:id="returnButton" layoutX="469.0" layoutY="401.0" mnemonicParsing="false" onAction="#handleReturn" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: black;" text="Return" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

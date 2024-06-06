@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="1010.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainSceneController">
+   <children>
+      <Label layoutX="552.0" prefHeight="77.0" prefWidth="298.0" style="-fx-border-color: red;" text=" Gestion des cours">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="26.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="NE_RESIZE" />
+         </cursor>
+      </Label>
+      <Pane prefHeight="664.0" prefWidth="392.0" style="-fx-background-color: BISQUE;">
+         <children>
+            <Label layoutX="36.0" layoutY="139.0" text="Cours">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold Oblique" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="317.0" text="Filiere">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold Oblique" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="230.0" text="Prof">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold Oblique" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCours" layoutX="173.0" layoutY="139.0" prefHeight="31.0" prefWidth="199.0" promptText="Nom" />
+            <TextField fx:id="txtFiliere" layoutX="173.0" layoutY="317.0" prefHeight="31.0" prefWidth="199.0" promptText="Filiere" />
+            <Label layoutX="36.0" layoutY="401.0" text="Detail">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold Oblique" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDetails" layoutX="173.0" layoutY="401.0" prefHeight="31.0" prefWidth="199.0" promptText="Detail" />
+            <Button fx:id="btnAdd" layoutX="23.0" layoutY="479.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: BISQUE; -fx-border-color: black; -fx-border-width: 2px;" text="Ajouter">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="129.0" layoutY="550.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: BISQUE; -fx-border-color: black; -fx-border-width: 2px;" text="mise à jour">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="250.0" layoutY="479.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: BISQUE; -fx-border-color: black; -fx-border-width: 2px;" text="Supprimer">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="104.0" prefHeight="77.0" prefWidth="184.0" text="FlexManager">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="26.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <Label fx:id="logout" layoutX="145.0" layoutY="613.0" onMouseClicked="#handleLogout" text="Déconnecter" textFill="#3917d3">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameLabel" layoutX="230.0" layoutY="233.0" text="Label" textFill="#0f1bbf">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutX="392.0" layoutY="216.0" prefHeight="233.0" prefWidth="617.0">
+         <columns>
+            <TableColumn fx:id="coursColumn" prefWidth="118.0" text="Cours" />
+            <TableColumn fx:id="profColumn" prefWidth="109.0" text="Prof" />
+            <TableColumn fx:id="filiereColumn" prefWidth="89.0" text="Filiere" />
+            <TableColumn fx:id="detailsColumn" prefWidth="299.0" text="Details" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

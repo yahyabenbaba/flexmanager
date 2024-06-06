@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <TextField fx:id="usertext" alignment="TOP_CENTER" layoutX="398.0" layoutY="174.0" promptText="username" style="-fx-border-color: CORNFLOWERBLUE; -fx-background-color: GAINSBORO;" />
+      <PasswordField fx:id="passtext" alignment="TOP_CENTER" layoutX="398.0" layoutY="215.0" promptText="password" style="-fx-border-color: CORNFLOWERBLUE; -fx-background-color: GAINSBORO;" />
+      <Button layoutX="388.0" layoutY="308.0" mnemonicParsing="false" onAction="#connectToDatabase" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: black;" text="login" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="388.0" layoutY="354.0" mnemonicParsing="false" onAction="#openSignUpForm" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: black;" text="sign up" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Pane layoutX="1.0" layoutY="-1.0" prefHeight="400.0" prefWidth="277.0" style="-fx-background-color: BISQUE;">
+         <children>
+            <Label layoutX="45.0" layoutY="46.0" text="FlexManager">
+               <font>
+                  <Font name="System Bold Italic" size="33.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="79.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/kindpng_2271076.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="messageLabel" layoutX="-3.0" layoutY="340.0" prefHeight="46.0" prefWidth="277.0" />
+         </children>
+      </Pane>
+      <Label layoutX="345.0" layoutY="43.0" prefHeight="46.0" prefWidth="200.0" text="WELCOME!">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="174.0" prefHeight="25.0" prefWidth="95.0" text="Username">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="218.0" prefHeight="25.0" prefWidth="95.0" text="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Pane layoutX="278.0" prefHeight="400.0" prefWidth="313.0" style="-fx-border-color: black; -fx-border-width: 4;" />
+   </children>
+</AnchorPane>

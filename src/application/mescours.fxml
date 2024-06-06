@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="664.0" prefWidth="604.0" style="-fx-background-color: BISQUE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mescoursController">
+   <children>
+      <Label layoutX="94.0" layoutY="47.0" prefHeight="77.0" prefWidth="184.0" text="MES COURS ">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="26.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <ButtonBar layoutX="94.0" layoutY="485.0" prefHeight="67.0" prefWidth="272.0" />
+      <ImageView fitHeight="138.0" fitWidth="109.0" layoutX="446.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/kindpng_2271076.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="446.0" layoutY="47.0" text="FlexManager">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="11.0" layoutY="278.0" prefHeight="200.0" prefWidth="584.0">
+         <columns>
+            <TableColumn fx:id="profColumn" prefWidth="131.0" text="Prof" />
+            <TableColumn fx:id="coursColumn" prefWidth="452.0" text="Cours" />
+         </columns>
+      </TableView>
+      <Button fx:id="deconnecter" layoutX="229.0" layoutY="552.0" mnemonicParsing="false" onAction="#deconnecter" style="-fx-background-color: BISQUE; -fx-border-width: 2PX; -fx-border-color: black;" text="se deconnecter">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,84 @@
+/* Style for the TableView */
+.table-view {
+    -fx-border-color: #ccc;
+    -fx-background-color: #f9f9f9;
+    -fx-alternate-row-fill-visible: true;
+    -fx-alternate-row-fill: #f3f3f3;
+}
+
+/* Header styling */
+.table-view .column-header-background {
+    -fx-background-color: #4A90E2;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 28px;
+    -fx-border-color: transparent transparent #bbb transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: #4A90E2;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* Row styling */
+.table-view .table-row-cell {
+    -fx-cell-size: 30px;
+}
+
+/* Cell styling */
+.table-view .table-cell {
+    -fx-border-color: #e0e0e0;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #555;
+}
+
+/* Selected cell styling */
+.table-view .table-cell:selected {
+    -fx-background-color: rgba(107, 142, 35, 0.5); /* OliveDrab with 50% opacity */
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:filled:selected, 
+.table-view .table-cell:filled:selected {
+    -fx-background-color: rgba(107, 142, 35, 0.5); /* OliveDrab with 50% opacity */
+}
+
+/* Alternating row colors */
+.table-view .table-row-cell:odd {
+    -fx-background-color: #f3f3f3;
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #ffffff;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #FFDDC1;
+    -fx-border-color: #888;
+    -fx-border-width: 2px;
+    -fx-font-family: "DejaVu Sans Mono Bold";
+    -fx-font-size: 18px;
+}
+
+/* Default state for specific buttons */
+#btnAdd, #btnUpdate, #btnDelete {
+    -fx-background-color: #FFDDC1;
+    -fx-text-fill: #333;
+}
+
+/* Hover effect for specific buttons */
+#btnAdd:hover, #btnUpdate:hover, #btnDelete:hover {
+    -fx-background-color: #333 !important;
+    -fx-text-fill: white;
+}
+
+#logout {
+    -fx-text-fill: #3917d3; /* Initial color */
+}
+
+#logout:hover {
+    -fx-text-fill: black; /* Color when hovered */
+}
